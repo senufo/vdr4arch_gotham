@@ -1,0 +1,27 @@
+# Maintainer: Christopher Reimer <vdr4arch[at]creimer[dot]net>
+pkgname=vdr-manager
+pkgver=11.1
+_vdrapi=2.0.0
+pkgrel=2
+pkgdesc="Allows remote programming VDR using VDR-Manager running on Android devices"
+url="http://projects.vdr-developer.org/projects/vdr-manager"
+arch=('x86_64' 'i686')
+license=('GPL2')
+depends=('gcc-libs' "vdr-api=${_vdrapi}")
+_plugname=$(echo $pkgname | sed 's/vdr-//g')
+#http://projects.vdr-developer.org/attachments/download/1594/vdr-vdrmanager-0.11.tar.gz
+source=("http://projects.vdr-developer.org/git/vdr-manager.git/snapshot/vdr-manager-11.1.tar.gz")
+md5sums=('SKIP')
+
+build() {
+  #mkdir "${srcdir}/${_plugname}-${pkgver}"
+  cd "${srcdir}/vdr-${_plugname}-${pkgver}/vdr-vdrmanager/"
+  make GITTAG=''
+}
+
+package() {
+  cd "${srcdir}/vdr-${_plugname}-${pkgver}/vdr-vdrmanager/"
+  #cd "${srcdir}/${pkgname}-${pkgver}/vdr-manager/"
+
+  make DESTDIR="$pkgdir" install
+}

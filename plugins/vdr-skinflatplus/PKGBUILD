@@ -1,0 +1,38 @@
+# Maintainer: Christopher Reimer <vdr4arch[at]creimer[dot]net>
+pkgname=vdr-skinflatplus
+pkgver=0.2.1_a821a54d_git
+_vdrapi=2.0.0
+pkgrel=2
+pkgdesc="Simple and slim skin for VDR, git version"
+url="http://projects.vdr-developer.org/projects/plg-skinflat"
+arch=('x86_64' 'i686')
+license=('GPL2')
+depends=('imagemagick' 'libpng' "vdr-api=${_vdrapi}")
+# libpng because we need imagemagick with libpng support. libpng is only an optdepend of imagemagick
+install="$pkgname.install"
+_plugname=$(echo $pkgname | sed 's/vdr-//g')
+source=("git://projects.vdr-developer.org/skin-flatplus.git"
+	'truecolor.diff'
+	'skip_test.diff'
+	'first_display_false.diff')
+md5sums=('SKIP'
+	 'SKIP'
+	 'SKIP'
+	 'SKIP')
+
+build() {
+  cd "${srcdir}/skin-flatplus"
+  make
+}
+
+prepare() {
+  cd "${srcdir}/skin-flatplus"
+  #patch -p0 -i "$srcdir/truecolor.diff"
+  #patch -p0 -i "$srcdir/error_osd.diff"
+  patch -p1 -i "$srcdir/skip_test.diff"
+  patch -p2 -i "$srcdir/first_display_false.diff"
+}
+package() {
+  cd "${srcdir}/skin-flatplus"
+  make DESTDIR="$pkgdir" install
+}

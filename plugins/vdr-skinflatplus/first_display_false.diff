@@ -1,0 +1,11 @@
+--- src/skin-flatplus/flat.c	2014-03-29 14:07:01.325935010 +0100
++++ src/skin-flatplus/flat.c.orig	2014-03-29 14:25:29.042298553 +0100
+@@ -15,7 +15,7 @@
+ 
+ cTheme Theme;
+ static bool menuActive = false;
+-bool firstDisplay = true;
++bool firstDisplay = false;
+ 
+ cFlat::cFlat(void) : cSkin("flatPlus", &::Theme) {
+     displayMenu = NULL;

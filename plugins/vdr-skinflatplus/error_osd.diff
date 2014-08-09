@@ -1,0 +1,11 @@
+--- baserender.c.orig	2014-03-24 21:22:35.745728857 +0100
++++ baserender.c	2014-03-24 21:23:10.790693230 +0100
+@@ -91,7 +91,7 @@
+             return;
+         }
+     }
+-    esyslog("skinflatplus: create osd FAILED left: %d top: %d width: %d height: %d", left, top, width, height);
++    //esyslog("skinflatplus: create osd FAILED left: %d top: %d width: %d height: %d", left, top, width, height);
+     return;
+ }
+ 

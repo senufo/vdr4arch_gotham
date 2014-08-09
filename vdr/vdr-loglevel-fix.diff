@@ -1,0 +1,14 @@
+diff -ruN vdr-2.0.2.orig/tools.h vdr-2.0.2/tools.h
+--- vdr-2.0.2.orig/tools.h	2013-02-17 14:18:06.000000000 +0100
++++ vdr-2.0.2/tools.h	2013-06-06 17:29:54.076865638 +0200
+@@ -32,8 +32,8 @@
+ extern int SysLogLevel;
+ 
+ #define esyslog(a...) void( (SysLogLevel > 0) ? syslog_with_tid(LOG_ERR, a) : void() )
+-#define isyslog(a...) void( (SysLogLevel > 1) ? syslog_with_tid(LOG_ERR, a) : void() )
+-#define dsyslog(a...) void( (SysLogLevel > 2) ? syslog_with_tid(LOG_ERR, a) : void() )
++#define isyslog(a...) void( (SysLogLevel > 1) ? syslog_with_tid(LOG_INFO, a) : void() )
++#define dsyslog(a...) void( (SysLogLevel > 2) ? syslog_with_tid(LOG_DEBUG, a) : void() )
+ 
+ #define LOG_ERROR         esyslog("ERROR (%s,%d): %m", __FILE__, __LINE__)
+ #define LOG_ERROR_STR(s)  esyslog("ERROR (%s,%d): %s: %m", __FILE__, __LINE__, s)

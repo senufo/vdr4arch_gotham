@@ -1,0 +1,97 @@
+# Maintainer: Senufo
+pkgname=vdr
+pkgver=2.0.6
+pkgrel=3
+pkgdesc="'open' digital satellite receiver and timer controlled video disk recorder, pin patch, epgsearch patch"
+url="http://tvdr.de/"
+arch=('x86_64' 'i686')
+license=('GPL2')
+depends=('libjpeg-turbo' 'perl' 'ttf-font')
+optdepends=('lirc-utils: remote control support'
+            'ncurses: skinncurses plugin'
+            'runvdr-extreme: startscript for vdr')
+provides=("vdr-api=2.0.0")
+backup=('var/lib/vdr/channels.conf'
+        'var/lib/vdr/diseqc.conf'
+        'var/lib/vdr/keymacros.conf'
+        'var/lib/vdr/scr.conf'
+        'var/lib/vdr/sources.conf'
+        'var/lib/vdr/svdrphosts.conf')
+options='!emptydirs'
+install='vdr.install'
+source=("ftp://ftp.tvdr.de/vdr/${pkgname}-${pkgver}.tar.bz2"
+        'shutdown.sh'
+        'shutdown-wrapper.c'
+	'vdr-2.0.2-pin.diff'
+        'jumpseconds.patch'
+	'MainMenuHooks-v1_0_2.diff'
+	'vdr-loglevel-fix.diff'
+	'timercmd-0.1_1.7.17.diff'
+	'vdr.epgsearch-exttimeredit-0.0.2.diff'
+	'tranduc.diff')
+
+md5sums=('f6916524c302f3209fd0af507ab97387'
+         'fb1f52d7decba2df9c5d00c70040984a'
+         '7cad811b4ac5ee6c0b5496d006f1e0ee'
+	 'SKIP'
+         '386ca0cd63e6620f241d9c7de397df79'
+	 '301c9b9766ed5182b07f1debc79abc21'
+	 '6877c9efd84261c4a0471e657edce52d'
+	 'a05b21b927ab6d49f237483b69add770'
+	 '71f7281d55eba1957f4267f596b11e29'
+	 'SKIP')
+
+
+prepare() {
+  cd "${srcdir}/${pkgname}-${pkgver}"
+
+cat > Make.config <<EOF
+PREFIX    = /usr
+BINDIR    = /usr/bin
+INCDIR    = /usr/include
+LIBDIR    = /usr/lib/vdr/plugins
+LOCDIR    = /usr/share/locale
+MANDIR    = /usr/share/man
+PCDIR     = /usr/lib/pkgconfig
+RESDIR    = /usr/share/vdr
+VIDEODIR  = /srv/vdr/video
+CONFDIR   = /var/lib/vdr
+CACHEDIR  = /var/cache/vdr
+
+VDR_USER     = henri
+### Fallback for plugins with old makefiles:
+ifdef PLUGIN
+CFLAGS   += -fPIC
+CXXFLAGS += -fPIC
+endif
+EOF
+
+  sed -i 's/NULL, 0, true/NULL, 0, OpenSubMenus/g' "$srcdir/MainMenuHooks-v1_0_2.diff"
+  patch -p1 -i "$srcdir/vdr-loglevel-fix.diff"
+  patch -p0 -i "$srcdir/vdr-2.0.2-pin.diff"
+  patch -p1 -i "$srcdir/jumpseconds.patch"
+  patch -p1 -i "$srcdir/MainMenuHooks-v1_0_2.diff"
+  patch -p1 -i "$srcdir/timercmd-0.1_1.7.17.diff"
+  patch -p0 -i "$srcdir/vdr.epgsearch-exttimeredit-0.0.2.diff"
+  #cp "$srcdir/vdr-2.0.6/po/fr_FR.po" "$srcdir/vdr-2.0.6/po/fr_FR.po.1"
+  patch -p0 -i "$srcdir/tranduc.diff"
+  #cp "$srcdir/vdr-2.0.6/po/fr_FR.po" "$srcdir/vdr-2.0.6/po/fr_FR.po.2"
+
+
+
+}
+
+build() {
+  gcc -o shutdown-wrapper shutdown-wrapper.c
+
+  cd "${srcdir}/${pkgname}-${pkgver}"
+  make
+}
+
+package() {
+  install -Dm754 shutdown-wrapper "$pkgdir/usr/lib/vdr/bin/shutdown-wrapper"
+  install -Dm755 shutdown.sh "$pkgdir/usr/lib/vdr/bin/shutdown.sh"
+
+  cd "${srcdir}/${pkgname}-${pkgver}"
+  make DESTDIR="${pkgdir}" install
+}

@@ -1,0 +1,11 @@
+--- skinflat.c.orig	2014-03-16 16:35:11.884237265 +0100
++++ skinflat.c	2014-03-16 16:35:47.359178197 +0100
+@@ -82,7 +82,7 @@
+ bool cPluginFlat::Start(void) {
+     if (!cOsdProvider::SupportsTrueColor()) {
+         esyslog("skinflat: No TrueColor OSD found! Aborting!");
+-        return false;
++        //return false; remove test truecolor OSD
+     } else
+         dsyslog("skinflat: TrueColor OSD found");
+     flat = new cFlat;

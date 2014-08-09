@@ -1,0 +1,201 @@
+# VDR plugin language source file.
+# Copyright (C) 2007 Klaus Schmidinger <kls@cadsoft.de>
+# This file is distributed under the same license as the VDR package.
+# Klaus Schmidinger <kls@cadsoft.de>, 2000
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: vdr-remotetimers 1.0.0\n"
+"Report-Msgid-Bugs-To: <vdrdev@schmirler.de>\n"
+"POT-Creation-Date: 2013-10-18 17:40+0200\n"
+"PO-Revision-Date: 2014-04-13 17:40+0200\n"
+"Last-Translator: Senufo\n"
+"Language-Team: French\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Location"
+msgstr "Position"
+
+msgid "local"
+msgstr "local"
+
+msgid "remote"
+msgstr "distant"
+
+msgid "User ID"
+msgstr "ID utilisateur"
+
+msgid "Timer is recording - can't move it to server"
+msgstr "Enregistrement en cours - impossible de le déplacer sur le serveur"
+
+#. TRANSLATORS: Indicator for (R)emote or (L)ocal timer in timers list
+msgid "RL"
+msgstr "RL"
+
+msgid "User"
+msgstr "Utilisateur"
+
+#. TRANSLATORS: Button displayed instead of "Delete" when there are other users who subscribed to the timer
+msgid "Cancel"
+msgstr "Annuler"
+
+#. TRANSLATORS: Schedule timer match characters (lower case for partial match): no match (blank), normal (tT)imer, (pP)rivate timer
+msgid " tTpP"
+msgstr ""
+
+msgid "Edit recording"
+msgstr "Editer l'enregistrement"
+
+msgid "Remote editing process started"
+msgstr "Edition distante démarrée"
+
+msgid "Unable to update user ID"
+msgstr "Impossible de mettre à jour l'ID de l'utilisateur"
+
+msgid "Unable to change priority/lifetime"
+msgstr "Impossible de changer la priorité/temps de vie"
+
+msgid "Unable to rename recording"
+msgstr "Impossible de renomer l'enregistrement"
+
+msgid "Move to other filesystem in background?"
+msgstr "Déplacer sur un autre système de fichier en tache de fond"
+
+msgid "Button$Folder"
+msgstr "Répertoire"
+
+msgid "Cut"
+msgstr "Couper"
+
+msgid "Select folder"
+msgstr "Selectionner le répertoire"
+
+#. TRANSLATORS: Button displayed instead of "Delete" when there are other users who didn't watch the recording yet
+msgid "Release"
+msgstr ""
+
+msgid "Abort moving recording"
+msgstr "Annuler le déplacement de l'enregistrement"
+
+msgid "Remote timers not available"
+msgstr "Programmations distante non disponibles"
+
+msgid "Finished moving recording"
+msgstr "Déplacement de l'enregistrement fini"
+
+msgid "Failed to move recording!"
+msgstr "Impossible de déplacer l'enregistrement"
+
+msgid "Edit timers on remote VDR"
+msgstr "Editer la programmation sur le VDR distant"
+
+msgid "Remote Timers"
+msgstr "Programmation distante"
+
+msgid "Moving recording"
+msgstr "Déplacer l'enregistrement"
+
+msgid "Remote recording failed. Start local recording?"
+msgstr "Enregistrmenet distant impossible. Démarrer l'enregistrment en local"
+
+msgid "Server IP"
+msgstr "IP du serveur"
+
+msgid "Server port"
+msgstr "Port du serveur"
+
+msgid "from svdrpservice"
+msgstr "de svdrpservice"
+
+msgid "Map channels using"
+msgstr ""
+
+msgid "channel number"
+msgstr "numéro de la chaîne"
+
+msgid "channel ID"
+msgstr "ID de la chaîne"
+
+msgid "Hide mainmenu entry"
+msgstr "Cacher l'entrée dans le menu principal"
+
+msgid "Defaults for new timers"
+msgstr "Par défaut pour les nouvelles programmations"
+
+msgid "Instant recordings"
+msgstr "Enregistrements instantanée"
+
+msgid "Pause recordings"
+msgstr "Enregistrement en pause"
+
+#, c-format
+msgid "Settings for menu \"%s\""
+msgstr "Paramètres pour le menu \"%s\""
+
+msgid "Replace mainmenu"
+msgstr "Remplacer dans le menu principal"
+
+msgid "List style"
+msgstr "Style de liste"
+
+msgid "Show progress bar"
+msgstr "Montrer la barre de progression"
+
+#, c-format
+msgid "Key binding of %s/%s"
+msgstr "Association %s/%s"
+
+msgid "User ID filter"
+msgstr "Filter par ID de l'utilisateur"
+
+msgid "Move recording bandwidth limit (Mbit/s)"
+msgstr "Limiter la bande passabte de l'enregistrment (Mbit/s)"
+
+msgid "unlimited"
+msgstr "illimité"
+
+msgid "Remote recordings"
+msgstr "Enregistrements distants"
+
+msgid "Mounted on subdirectory"
+msgstr "Monter sur le sous répertoire"
+
+msgid "Monitor update file"
+msgstr "Controler la mise à jour du fichier"
+
+msgid "Updated remote timers list"
+msgstr "Mise à jour des programmations distantes"
+
+msgid "Timers are being edited remotely - please try again"
+msgstr "Les programmations distantes sont en train d'être éditées - SVP, essayer de nouveau"
+
+msgid "Timer is recording - please deactivate it first"
+msgstr "Enregistrement en cours - SVP, déactivez là d'abord"
+
+msgid "Timer already defined"
+msgstr "Programmation déjà définie"
+
+msgid "Timers modified remotely - please check remote timers"
+msgstr "La programmation distante a été modifiée - SVP, vérifiez là"
+
+msgid "Unexpected error - please check remote timers"
+msgstr "Erreur inattendue - SVP, vérifiez la programmation distante"
+
+msgid "Lost SVDRP connection - please check remote timers"
+msgstr "Connexion SVDRP perdue - SVP vérifiez là"
+
+msgid "Remote cutter already active or no marks defined"
+msgstr "Découpage distant actif ou pas de marques définies"
+
+msgid "Recording not found on remote VDR - use local cutter"
+msgstr "Pas d'enregistrments sur le VDR distant - Utilisez le découpage local"
+
+msgid "Unexpected error - unable to start remote cutter"
+msgstr "Erreur inattendue - Immpossible de démarrer le découpage distant"
+
+msgid "Lost SVDRP connection - unable to start remote cutter"
+msgstr "SVDRP connexion perduei - impossible de démarrer le découpage distant"

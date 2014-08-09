@@ -1,0 +1,73 @@
+--- po/fr_FR.po	2014-03-25 09:21:37.012942376 +0100
++++ po/fr_FR.po	2014-03-25 10:16:17.526893254 +0100
+@@ -17,7 +17,7 @@
+ msgstr ""
+ "Project-Id-Version: VDR 2.0.0\n"
+ "Report-Msgid-Bugs-To: <vdr-bugs@tvdr.de>\n"
+-"POT-Creation-Date: 2013-03-04 14:46+0100\n"
++"POT-Creation-Date: 2014-03-25 10:16+0100\n"
+ "PO-Revision-Date: 2013-02-24 12:56+0100\n"
+ "Last-Translator: Dominique Plu <dplu@free.fr>\n"
+ "Language-Team: French <vdr@linuxtv.org>\n"
+@@ -649,6 +649,15 @@
+ msgid "Lifetime"
+ msgstr "Durée de vie"
+ 
++msgid "Childlock"
++msgstr "Controle Parental"
++
++msgid "yes"
++msgstr "oui"
++
++msgid "no"
++msgstr "non"
++
+ msgid "File"
+ msgstr "Fichier"
+ 
+@@ -682,6 +691,9 @@
+ msgid "Timer still recording - really delete?"
+ msgstr "Enregistrement en cours - confirmer la suppression ?"
+ 
++msgid "Timer commands"
++msgstr ""
++
+ msgid "Event"
+ msgstr "Évènement"
+ 
+@@ -912,9 +924,6 @@
+ msgid "center cut out"
+ msgstr "center cut out"
+ 
+-msgid "no"
+-msgstr "non"
+-
+ msgid "names only"
+ msgstr "noms uniquement"
+ 
+@@ -1045,9 +1054,6 @@
+ msgid "confirm"
+ msgstr "confirmer"
+ 
+-msgid "yes"
+-msgstr "oui"
+-
+ msgid "Recording"
+ msgstr "Enregistrement"
+ 
+@@ -1123,6 +1129,15 @@
+ msgid "Setup.Replay$Resume ID"
+ msgstr "ID de reprise"
+ 
++msgid "Setup.Replay$Jump Seconds"
++msgstr ""
++
++msgid "Setup.Replay$Jump Seconds Slow"
++msgstr ""
++
++msgid "Setup.Recording$Jump Seconds (Repeat)"
++msgstr ""
++
+ msgid "Miscellaneous"
+ msgstr "Divers"
+ 

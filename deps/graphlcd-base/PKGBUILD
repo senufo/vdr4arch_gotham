@@ -1,0 +1,49 @@
+# Maintainer: Christopher Reimer <vdr4arch[at]creimer[dot]net>
+# Contributor: Ole Ernst <olebowle[at]gmx[dot]com>
+pkgname=graphlcd-base
+pkgver=20130419
+_gitver=c45745ea462ea3758daffc6302552993ba4c3be0
+pkgrel=5
+pkgdesc="Project to support graphical LC displays connected to the PC"
+url="http://projects.vdr-developer.org/projects/show/graphlcd"
+arch=('x86_64' 'i686')
+license=('GPL2')
+depends=('imagemagick' 'libusb-compat' 'libvncserver')
+optdepends='serdisplib: Add support for more serial displays'
+makedepends=('git')
+backup=(etc/graphlcd.conf)
+source=("git://projects.vdr-developer.org/graphlcd-base.git#commit=$_gitver")
+md5sums=('SKIP')
+
+pkgver() {
+  cd "${srcdir}/${pkgname}"
+  git log -1 --pretty=format:%ad --date=short | sed 's/-//g'
+}
+
+prepare() {
+  cd "${srcdir}/${pkgname}"
+  sed -i '/CFLAGS/d' Make.config
+  sed -i '/CXXFLAGS/d' Make.config
+  sed -i '/LDFLAGS/d' Make.config
+  sed -i 's/#HAVE_AX206DPF_EXPERIMENTAL/HAVE_AX206DPF_EXPERIMENTAL/' Make.config
+  sed -i 's/#HAVE_picoLCD_256x64_EXPERIMENTAL/HAVE_picoLCD_256x64_EXPERIMENTAL/' Make.config
+  sed -i 's/#HAVE_IMAGEMAGICK/HAVE_IMAGEMAGICK/' Make.config
+}
+
+build() {
+  cd "${srcdir}/${pkgname}"
+  make
+}
+
+package() {
+  cd "${srcdir}/${pkgname}"
+  mkdir -p ${pkgdir}/usr/lib/udev/rules.d
+  make DESTDIR="${pkgdir}" \
+       BINDIR=${pkgdir}/usr/bin \
+       LIBDIR=${pkgdir}/usr/lib \
+       INCDIR=${pkgdir}/usr/include \
+       MANDIR=${pkgdir}/usr/share/man \
+       UDEVRULESDIR=${pkgdir}/usr/lib/udev/rules.d \
+       install
+  install -Dm644 graphlcd.conf "$pkgdir/etc/graphlcd.conf"
+}

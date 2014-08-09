@@ -1,0 +1,538 @@
+-- Logs begin at dim. 2014-03-23 15:21:26 CET, end at sam. 2014-03-29 16:35:08 CET. --
+mars 29 16:34:56 netop vdr[30143]: [30143] VDR version 2.0.6 started
+mars 29 16:34:56 netop vdr[30143]: [30143] codeset is 'UTF-8' - known
+mars 29 16:34:56 netop vdr[30143]: [30143] found 28 locales in /usr/share/locale
+mars 29 16:34:56 netop vdr[30143]: [30143] loading plugin: /usr/lib/vdr/plugins/libvdr-xineliboutput.so.2.0.6
+mars 29 16:34:56 netop vdr[30143]: [30143] loading plugin: /usr/lib/vdr/plugins/libvdr-pin.so.2.0.6
+mars 29 16:34:56 netop vdr[30143]: [30143] loading plugin: /usr/lib/vdr/plugins/libvdr-streamdev-server.so.2.0.6
+mars 29 16:34:56 netop vdr[30143]: [30143] loading plugin: /usr/lib/vdr/plugins/libvdr-streamdev-client.so.2.0.6
+mars 29 16:34:56 netop vdr[30143]: [30143] loading plugin: /usr/lib/vdr/plugins/libvdr-svdrpservice.so.2.0.6
+mars 29 16:34:56 netop vdr[30143]: [30143] loading plugin: /usr/lib/vdr/plugins/libvdr-svdrposd.so.2.0.6
+mars 29 16:34:56 netop vdr[30143]: [30143] loading plugin: /usr/lib/vdr/plugins/libvdr-vdrmanager.so.2.0.6
+mars 29 16:34:56 netop vdr[30143]: [30143] loading plugin: /usr/lib/vdr/plugins/libvdr-femon.so.2.0.6
+mars 29 16:34:56 netop vdr[30143]: [30143] loading plugin: /usr/lib/vdr/plugins/libvdr-epgsearch.so.2.0.6
+mars 29 16:34:56 netop vdr[30143]: [30143] loading plugin: /usr/lib/vdr/plugins/libvdr-skinenigmang.so.2.0.6
+mars 29 16:34:56 netop vdr[30143]: [30143] loading plugin: /usr/lib/vdr/plugins/libvdr-skinpearlhd.so.2.0.6
+mars 29 16:34:56 netop vdr[30143]: [30143] loading plugin: /usr/lib/vdr/plugins/libvdr-skinnopacity.so.2.0.6
+mars 29 16:34:56 netop vdr[30143]: [30143] loading plugin: /usr/lib/vdr/plugins/libvdr-skinflatplus.so.2.0.6
+mars 29 16:34:56 netop vdr[30143]: [30143] loading plugin: /usr/lib/vdr/plugins/libvdr-extrecmenu.so.2.0.6
+mars 29 16:34:56 netop vdr[30143]: [30143] loading plugin: /usr/lib/vdr/plugins/libvdr-epgsync.so.2.0.6
+mars 29 16:34:56 netop vdr[30143]: [30143] loading /var/lib/vdr/setup.conf
+mars 29 16:34:56 netop vdr[30143]: [30143] [xine..put] Skipping configuration entry Remote.ListenPort=37890 (overridden in command line)
+mars 29 16:34:56 netop vdr[30143]: [30143] [xine..put] Skipping configuration entry RemoteMode=1 (overridden in command line)
+mars 29 16:34:56 netop vdr[30143]: [30143] loading /var/lib/vdr/sources.conf
+mars 29 16:34:56 netop vdr[30143]: [30143] loading /var/lib/vdr/diseqc.conf
+mars 29 16:34:56 netop vdr[30143]: [30143] loading /var/lib/vdr/scr.conf
+mars 29 16:34:56 netop vdr[30143]: [30143] loading /var/lib/vdr/channels.conf
+mars 29 16:34:56 netop vdr[30143]: [30143] loading /var/lib/vdr/timers.conf
+mars 29 16:34:56 netop vdr[30143]: [30143] loading /var/lib/vdr/commands.conf
+mars 29 16:34:56 netop vdr[30143]: [30143] loading /var/lib/vdr/reccmds.conf
+mars 29 16:34:56 netop vdr[30143]: [30143] loading /var/lib/vdr/svdrphosts.conf
+mars 29 16:34:56 netop vdr[30143]: [30143] loading /var/lib/vdr/remote.conf
+mars 29 16:34:56 netop vdr[30143]: [30143] loading /var/lib/vdr/keymacros.conf
+mars 29 16:34:56 netop vdr[30143]: [30144] video directory scanner thread started (pid=30143, tid=30144, prio=high)
+mars 29 16:34:56 netop vdr[30143]: [30143] registered source parameters for 'A - ATSC'
+mars 29 16:34:56 netop vdr[30143]: [30143] registered source parameters for 'C - DVB-C'
+mars 29 16:34:56 netop vdr[30143]: [30143] registered source parameters for 'S - DVB-S'
+mars 29 16:34:56 netop vdr[30143]: [30143] registered source parameters for 'T - DVB-T'
+mars 29 16:34:56 netop vdr[30143]: [30146] epg data reader thread started (pid=30143, tid=30146, prio=high)
+mars 29 16:34:56 netop vdr[30143]: [30146] reading EPG data from /var/cache/vdr/epg.data
+mars 29 16:34:56 netop vdr[30143]: [30145] video directory scanner thread started (pid=30143, tid=30145, prio=high)
+mars 29 16:34:56 netop vdr[30143]: [30143] probing /dev/dvb/adapter1/frontend0
+mars 29 16:34:56 netop vdr[30143]: [30143] creating cDvbDevice
+mars 29 16:34:56 netop vdr[30143]: [30143] new device number 2
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/%Indiana_Jones_et_la_derniere_croisade/2009-12-28.20.40.50.99.rec/info.vdr[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C S19.2E-1-1072-8205[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/%Indiana_Jones_et_le_royaume_du_crâne_de_cristal/2009-12-29.20.50.50.99.rec/info.vdr[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C S19.2E-1-1074-8306 CANAL+ FAMILY[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/%Ce_qui_vous_attend_si_vous_attendez_un_enfant/2013-06-22.22.13.52-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [30143] DVB API version is 0x050A (VDR was built with 0x050A)
+mars 29 16:34:56 netop vdr[30143]: [30143] frontend 1/0 provides DVB-T with QPSK,QAM16,QAM64 ("DiBcom 7000PC")
+mars 29 16:34:56 netop vdr[30143]: [30143] cTimeMs: using monotonic clock (resolution is 1 ns)
+mars 29 16:34:56 netop vdr[30143]: [30143] found 1 DVB device
+mars 29 16:34:56 netop vdr[30143]: [30143] initializing plugin: xineliboutput (2.0.0-cvs): X11/xine-lib output plugin
+mars 29 16:34:56 netop vdr[30143]: [30148] tuner on frontend 1/0 thread started (pid=30143, tid=30148, prio=high)
+mars 29 16:34:56 netop vdr[30143]: [30143] new device number 9
+mars 29 16:34:56 netop vdr[30143]: [30143] [xine..put] cTimePts: clock_gettime(CLOCK_MONOTONIC): clock resolution 0 us
+mars 29 16:34:56 netop vdr[30143]: [30143] [xine..put] cTimePts: using monotonic clock
+mars 29 16:34:56 netop vdr[30143]: [30143] [xine..put] RTP SSRC: 0x539f098f
+mars 29 16:34:56 netop vdr[30143]: [30149] section handler thread started (pid=30143, tid=30149, prio=low)
+mars 29 16:34:56 netop vdr[30143]: [30143] initializing plugin: pin (0.1.14): Childlock plugin
+mars 29 16:34:56 netop vdr[30143]: [30143] loading /var/lib/vdr/plugins/pin/channellocks.conf
+mars 29 16:34:56 netop vdr[30143]: [30143] loading /var/lib/vdr/plugins/pin/broadcastlocks.conf
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C S19.2E-1-1074-8306 CANAL+ FAMILY[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/%Belphégor,_le_fantôme_du_Louvre/2013-06-07.23.58.52-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C S19.2E-1-1100-8723 FRANCE 4[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/%I,_Robot/2013-05-19.20.38.24-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [30143] loading /var/lib/vdr/plugins/pin/pluginlocks.conf
+mars 29 16:34:56 netop vdr[30143]: [30150] [xine..put] No CAP_SYS_NICE capability
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C S19.2E-1-1072-8201 CANAL+[0m
+mars 29 16:34:56 netop vdr[30143]: [30143] loading /var/lib/vdr/plugins/pin/menulocks.conf
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [30143] initializing plugin: streamdev-server (0.6.1-git): Serveur de streaming VDR
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/%Kick-Ass/2012-02-10.20.48.22-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [30143] initializing plugin: streamdev-client (0.6.1-git): Client de streaming VTP
+mars 29 16:34:56 netop vdr[30143]: [30145] video directory scanner thread ended (pid=30143, tid=30145)
+mars 29 16:34:56 netop vdr[30143]: [30143] initializing plugin: svdrpservice (1.0.0): SVDRP client
+mars 29 16:34:56 netop vdr[30143]: [30143] initializing plugin: svdrposd (1.0.0): Publish OSD menu via SVDRP
+mars 29 16:34:56 netop vdr[30143]: [30143] initializing plugin: vdrmanager (0.11): VDR-Manager support plugin
+mars 29 16:34:56 netop vdr[30143]: [30143] initializing plugin: femon (2.0.4): Moniteur sur le signal DVB
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C S19.2E-1-1072-8205 CANAL+ FAMILY[0m
+mars 29 16:34:56 netop vdr[30143]: [30143] initializing plugin: epgsearch (1.0.1.beta5): Recherche de répétition dans EPG
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/%Tron,_l'héritage/2011-12-19.18.03.29-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [30143] initializing plugin: skinenigmang (0.1.2): Skin EnigmaNG
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C S19.2E-1-1072-8201 CANAL+[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [30143] initializing plugin: skinpearlhd (0.0.1): PearlHD Skin
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/%Avatar/2011-01-21.20.43.22-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [30143] initializing plugin: skinnopacity (0.1.4 dev): 'nOpacity' Skin
+mars 29 16:34:56 netop vdr[30143]: [30143] initializing plugin: skinflatplus (0.2.1): skin flatplus
+mars 29 16:34:56 netop vdr[30143]: [30143] skinflatplus: iconPath: /usr/share/vdr/plugins/skinflatplus/icons/
+mars 29 16:34:56 netop vdr[30143]: [30143] skinflatplus: load decor file: /usr/share/vdr/plugins/skinflatplus/decors/00_rect-alpha_mid.decor
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C S19.2E-1-1072-8201 CANAL+[0m
+mars 29 16:34:56 netop vdr[30143]: [30143] initializing plugin: extrecmenu (1.2.3-git): Menu enregistrement étendu
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [30143] initializing plugin: epgsync (1.0.0): Import EPG of an other VDR
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/%Le_monde_de_Narnia,_chapitre_3_:_l'odyssée_du_passeur_d'aurore/2012-01-20.20.48.22-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [30143] setting primary device to 2
+mars 29 16:34:56 netop vdr[30143]: [30143] assuming manual start of VDR
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C S19.2E-1-1072-8203 CANAL+ CINEMA[0m
+mars 29 16:34:56 netop vdr[30143]: [30143] SVDRP listening on port 6419
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [30143] skin "EnigmaNG" not available - using "lcars" instead
+mars 29 16:34:56 netop vdr[30143]: [30143] starting plugin: xineliboutput
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/%La_recrue/2012-08-15.20.38.27-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [30151] Remote decoder/display server (cXinelibServer) thread started (pid=30143, tid=30151, prio=high)
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C S19.2E-1-1072-8201[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/%Deja_vu/2008-09-19.20.40.99.99.rec/info.vdr[0m
+mars 29 16:34:56 netop vdr[30143]: [30151] [xine..put] No CAP_SYS_NICE capability
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C S19.2E-1-1072-8201 CANAL+[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [30151] [xine..put] cXinelibServer priority set successful SCHED_RR 2 [1,99]
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/%Comme_les_cinq_doigts_de_la_main/2011-06-18.20.43.22-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [30151] [xine..put] Listening on port 37890
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C S19.2E-1-1072-8201[0m
+mars 29 16:34:56 netop vdr[30143]: [30151] [xine..put] Listening for UDP broadcasts on port 37890
+mars 29 16:34:56 netop vdr[30143]: [123B blob data]
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/%Iron_Man/2009-09-18.20.40.50.99.rec/info.vdr[0m
+mars 29 16:34:56 netop vdr[30143]: [30146] epg data reader thread ended (pid=30143, tid=30146)
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C S19.2E-1-1072-8202 CANAL+ DECALE[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/%Mission_:_Impossible,_protocole_fantôme/2012-11-23.22.58.30-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C S19.2E-1-1074-8306 CANAL+ FAMILY[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/%Robots/2013-04-17.14.53.52-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C S19.2E-1-1072-8205[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/%Indiana_Jones_et_le_temple_maudit/2009-12-27.20.40.50.99.rec/info.vdr[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C S19.2E-1-1072-8201 CANAL+[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/%Philibert/2012-05-02.20.48.22-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C S19.2E-1-1072-8205[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/%Les_aventuriers_de_l'arche_perdue/2009-12-26.20.40.50.99.rec/info.vdr[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C S19.2E-1-1074-8306 CANAL+ FAMILY[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/%Robosapiens/2013-05-11.20.38.52-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C S19.2E-1-1072-8201 CANAL+[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/%Les_petits_mouchoirs/2011-11-18.22.38.22-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C S19.2E-1-1072-8205 CANAL+ FAMILY[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/%Shrek_4,_il_était_une_fin/2011-06-28.20.43.29-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-6-1538 NRJ12[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Hannah_Montana/%_/2010-09-14.16.33.13-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-6-1538 NRJ12[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Hannah_Montana/%_/2010-12-28.10.55.8-2.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-6-1538 NRJ12[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Hannah_Montana/%_/2010-12-27.10.55.8-2.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-6-1538 NRJ12[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Hannah_Montana/%_/2010-09-13.16.33.13-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-6-1538 NRJ12[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Hannah_Montana/%_/2010-09-16.16.33.13-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-6-1538 NRJ12[0m
+mars 29 16:34:56 netop vdr[30143]: [30143] [xine..put] cXinelibDevice::StartDevice(): Device started
+mars 29 16:34:56 netop vdr[30143]: [30143] starting plugin: pin
+mars 29 16:34:56 netop vdr[30143]: [30143] starting plugin: streamdev-server
+mars 29 16:34:56 netop vdr[30143]: [30143] loading /var/lib/vdr/plugins/streamdev-server/streamdevhosts.conf
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Hannah_Montana/%_/2010-10-05.16.25.13-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [30154] streamdev server thread started (pid=30143, tid=30154, prio=high)
+mars 29 16:34:56 netop vdr[30143]: [30143] starting plugin: streamdev-client
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-6-1538 NRJ12[0m
+mars 29 16:34:56 netop vdr[30143]: [30154] Streamdev: Listening (VTP) on port 2004
+mars 29 16:34:56 netop vdr[30143]: [30143] starting plugin: svdrpservice
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [30154] Streamdev: Listening (HTTP) on port 3000
+mars 29 16:34:56 netop vdr[30143]: [30143] starting plugin: svdrposd
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Hannah_Montana/%_/2010-10-04.16.25.13-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-6-1538 NRJ12[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Hannah_Montana/%_/2010-10-21.16.10.13-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-6-1538 NRJ12[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Hannah_Montana/%_/2010-12-29.10.55.8-2.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-6-1538 NRJ12[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Hannah_Montana/_/2010-09-24.16.30.13-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [30143] starting plugin: vdrmanager
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-517 Virgin 17[0m
+mars 29 16:34:56 netop vdr[30143]: [30143] starting plugin: femon
+mars 29 16:34:56 netop vdr[30143]: [30143] starting plugin: epgsearch
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [30143] loading /var/lib/vdr/plugins/epgsearch/epgsearchcats.conf
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Papa_Schultz/%_/2010-03-15.12.03.14-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [30143] loading /var/lib/vdr/plugins/epgsearch/epgsearchmenu.conf
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-517 Virgin 17[0m
+mars 29 16:34:56 netop vdr[30143]: [30143] EPGSearch: loading /var/lib/vdr/plugins/epgsearch/epgsearch.conf
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [30143] EPGSearch: loading /var/lib/vdr/plugins/epgsearch/epgsearchtemplates.conf
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Papa_Schultz/%_/2010-03-16.12.03.14-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [30143] loading /var/lib/vdr/plugins/epgsearch/timersdone.conf
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-517 Virgin 17[0m
+mars 29 16:34:56 netop vdr[30143]: [30143] EPGSearch: loading /var/lib/vdr/plugins/epgsearch/epgsearchupdmail.templ
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [30156] EPGSearch: searchtimer thread started (pid=30143, tid=30156, prio=high)
+mars 29 16:34:56 netop vdr[30143]: [30143] starting plugin: skinenigmang
+mars 29 16:34:56 netop vdr[30143]: [30157] EPGSearch: conflictcheck thread started (pid=30143, tid=30157, prio=high)
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Papa_Schultz/%_/2010-03-15.12.58.14-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [30143] starting plugin: skinpearlhd
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-517 Virgin 17[0m
+mars 29 16:34:56 netop vdr[30143]: [30143] starting plugin: skinnopacity
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30143] nopacity: No TrueColor OSD found! Aborting![0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Papa_Schultz/%_/2010-03-13.19.03.14-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [30143] nopacity: using Logo Directory /var/lib/vdr/plugins/skinnopacity/logos/
+mars 29 16:34:56 netop vdr[30143]: [30143] nopacity: using Icon Directory /var/lib/vdr/plugins/skinnopacity/icons/
+mars 29 16:34:56 netop vdr[30143]: [30143] nopacity: using EPG Images Directory /var/cache/vdr/plugins/skinnopacity/epgimages/
+mars 29 16:34:56 netop vdr[30143]: [30143] nopacity: trying to load rss feeds from /var/lib/vdr/plugins/skinnopacity/rssfeeds.conf
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-517 Virgin 17[0m
+mars 29 16:34:56 netop vdr[30143]: [30143] nopacity: loaded 4 rss feeds from /var/lib/vdr/plugins/skinnopacity/rssfeeds.conf
+mars 29 16:34:56 netop vdr[30143]: [30143] nopacity: RssFeed 1: name Tagesschau, URL: http://www.tagesschau.de/xml/rss2
+mars 29 16:34:56 netop vdr[30143]: [30143] nopacity: RssFeed 2: name Kicker, URL: http://rss.kicker.de/news/aktuell
+mars 29 16:34:56 netop vdr[30143]: [30143] nopacity: RssFeed 3: name Spiegel Online, URL: http://www.spiegel.de/schlagzeilen/tops/index.rss
+mars 29 16:34:56 netop vdr[30143]: [30143] nopacity: RssFeed 4: name Focus, URL: http://rss2.focus.de/c/32191/f/443312/index.rss
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Papa_Schultz/%_/2010-03-16.12.28.14-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-517 Virgin 17[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Papa_Schultz/%_/2010-03-11.12.58.14-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-517 Virgin 17[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Papa_Schultz/%_/2010-03-17.12.58.14-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-517 Virgin 17[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Papa_Schultz/%_/2010-03-18.12.28.14-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-517 Virgin 17[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Papa_Schultz/%_/2010-03-19.12.28.14-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-517 Virgin 17[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Papa_Schultz/%_/2010-03-19.12.58.14-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-517 Virgin 17[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Papa_Schultz/%_/2010-03-18.12.03.14-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-517 Virgin 17[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Papa_Schultz/%_/2010-03-17.12.28.14-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-517 Virgin 17[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Papa_Schultz/%_/2010-03-12.12.58.14-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-517 Virgin 17[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Papa_Schultz/%_/2010-03-16.12.58.14-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-517 Virgin 17[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Papa_Schultz/%_/2010-03-12.12.03.14-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-517 Virgin 17[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Papa_Schultz/%_/2010-03-17.12.03.14-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-517 Virgin 17[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Papa_Schultz/%_/2010-03-12.12.28.14-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-517 Virgin 17[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Papa_Schultz/%_/2010-03-19.12.03.14-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-517 Virgin 17[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Papa_Schultz/%_/2010-03-18.12.58.14-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-517 Virgin 17[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Papa_Schultz/%_/2010-03-09.12.28.14-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-517 Virgin 17[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Papa_Schultz/%_/2010-03-10.12.03.14-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-517 Virgin 17[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Papa_Schultz/%Papa_Schultz/2010-03-13.19.38.14-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-517 Virgin 17[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Papa_Schultz/%Goulag_13/2010-03-22.12.03.14-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-517 Virgin 17[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Papa_Schultz/%Conférence_générale/2010-03-22.12.58.14-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-517 Virgin 17[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Papa_Schultz/%Série_humoristique_américaine_avec_Bo/2010-03-22.12.28.14-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-517 Virgin 17[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Papa_Schultz/%Série_humoristique_américaine_avec_Bo/2010-03-09.12.58.14-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-517 Virgin 17[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Papa_Schultz/%Berlin_express/2010-03-20.19.03.14-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-1-274[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Zorro/%Zorro_et_l'homme_de_la_montagne/2009-05-10.20.00.99.99.rec/info.vdr[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-1-274[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Zorro/23_Le_nouveau_commandant/2008-11-30.20.10.99.99.rec/info.vdr[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-1-274[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Zorro/34_La_fuite_de_l'aigle/2009-02-15.20.00.99.99.rec/info.vdr[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-1-274[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Zorro/%Zorro_contre_cupidon/2009-04-19.20.00.99.99.rec/info.vdr[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-1-274[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Zorro/%Les_regrets_du_capitaine/2009-06-14.20.00.99.99.rec/info.vdr[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-1-274[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Zorro/30_Le_noeud_se_resserre/2009-01-18.20.00.99.99.rec/info.vdr[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-1-274[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Zorro/33_Bernado_en_face_de_la_mort/2009-02-08.20.00.99.99.rec/info.vdr[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-1-274[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Zorro/%La_senorita_fait_un_choix/2009-03-01.20.00.99.99.rec/info.vdr[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-1-274[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Zorro/31_Les_regrets_du_sergent/2009-01-25.20.00.99.99.rec/info.vdr[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-1-274[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Zorro/%S'il_vous_plaît_croyez-moi/2009-05-03.20.00.99.99.rec/info.vdr[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-1-274[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Zorro/Zorro/%Celui_qui_le_trouve_le_garde/2009-07-12.20.00.99.99.rec/info.vdr[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-1-274[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Zorro/35_Zorro_cavalier_seul/2009-02-22.20.00.99.99.rec/info.vdr[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-1-274[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Zorro/%Le_sergent_voit_rouge/2009-06-07.20.00.99.99.rec/info.vdr[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-1-274[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Zorro/%Etincelle_de_vengeance/2009-04-26.20.00.99.99.rec/info.vdr[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-1-274[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Zorro/%Longue_vie_au_gouverneur/2009-06-21.20.00.99.99.rec/info.vdr[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-1-274[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Zorro/29_L'homme_au_fouet/2009-01-11.20.10.99.99.rec/info.vdr[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-1-274[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Zorro/%Démasquer_le_tyran/2009-07-05.20.00.99.99.rec/info.vdr[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-1-274[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Zorro/%Le_gai_chevalier/2009-04-12.20.00.99.99.rec/info.vdr[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-519 France 4[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Génial_génie/%_/2010-11-10.10.00.26-2.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-519 France 4[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Génial_génie/%_/2010-12-04.10.05.26-2.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-519 France 4[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Génial_génie/%_/2010-11-03.10.00.26-2.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-519 France 4[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Génial_génie/%_/2010-11-06.10.05.26-2.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-519 France 4[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Génial_génie/%_/2010-09-26.10.10.26-2.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-519 France 4[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Génial_génie/%_/2010-09-22.10.10.26-2.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-519 France 4[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Génial_génie/%_/2010-09-25.10.05.26-2.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-519 France 4[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Génial_génie/%_/2010-10-09.10.05.26-2.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-519 France 4[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Génial_génie/%_/2010-10-03.10.10.26-2.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-519 France 4[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Génial_génie/%_/2010-11-13.10.05.26-2.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C S19.2E-1-1076-8157[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Génial_génie/%Génial_génie/2009-04-11.19.20.99.99.rec/info.vdr[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C S19.2E-1-1076-8157[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Génial_génie/%Génial_génie/2009-04-11.22.00.99.99.rec/info.vdr[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-519 France 4[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Génial_génie/%Au_sommaire_:/2010-10-24.10.10.26-2.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-519 France 4[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Génial_génie/%Au_sommaire_:/2010-10-06.10.00.26-2.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-519 France 4[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Génial_génie/%Au_sommaire_:/2010-11-02.10.15.26-2.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-519 France 4[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Génial_génie/%Au_sommaire_:/2010-12-12.10.10.26-2.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-519 France 4[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Génial_génie/%Au_sommaire_:/2010-11-07.10.10.26-2.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-519 France 4[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Génial_génie/%Au_sommaire_:/2010-10-10.10.10.26-2.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-519 France 4[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Génial_génie/%Au_sommaire_:/2010-11-11.10.10.26-2.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C S19.2E-1-1076-8157[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Génial_génie/Soap_Opera/2009-04-14.21.15.50.99.rec/info.vdr[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C S19.2E-1-1076-8157[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Génial_génie/Génie_swap/2009-04-14.20.50.50.99.rec/info.vdr[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-519 France 4[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Génial_génie/Au_sommaire_:/2010-10-06.14.15.26-2.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-518 Gulli[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Coups_de_génies/_/2010-08-24.19.25.25-2.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-518 Gulli[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Coups_de_génies/_/2010-08-27.19.25.25-2.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-518 Gulli[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Coups_de_génies/_/2010-08-25.19.25.25-2.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-518 Gulli[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Coups_de_génies/_/2010-08-23.19.25.25-2.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-2-518 Gulli[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Coups_de_génies/_/2010-08-26.19.25.25-2.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C S19.2E-1-1072-8205 CANAL+ FAMILY[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Rahan/%La_falaise_aux_oiseaux/2010-03-14.17.33.29-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C S19.2E-1-1072-8205 CANAL+ FAMILY[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Rahan/La_longue_nuit/2010-04-11.17.18.29-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C S19.2E-1-1072-8205 CANAL+ FAMILY[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Rahan/%Le_coutelas_d'ivoire/2010-02-14.16.28.29-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C S19.2E-1-1072-8205 CANAL+ FAMILY[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Rahan/%Un_ami_disparaît/2010-03-21.17.33.29-0.rec/info[0m
+mars 29 16:34:56 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C S19.2E-1-1072-8205 CANAL+ FAMILY[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Rahan/L'arme_magique/2010-05-02.15.23.29-0.rec/info[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C S19.2E-1-1072-8205 CANAL+ FAMILY[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Rahan/%La_colombe_assassinée/2010-03-28.17.08.29-0.rec/info[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C S19.2E-1-1072-8205 CANAL+ FAMILY[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Rahan/Pris_au_piège/2010-04-11.16.33.29-0.rec/info[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C S19.2E-1-1072-8205 CANAL+ FAMILY[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Rahan/%Le_gorak/2010-03-07.16.48.29-0.rec/info[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C S19.2E-1-1072-8205 CANAL+ FAMILY[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Rahan/%Les_liens_du_sang/2010-03-14.16.48.29-0.rec/info[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C S19.2E-1-1072-8205 CANAL+ FAMILY[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Rahan/%Les_rôdeurs_de_la_jungle/2010-03-07.17.13.29-0.rec/info[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C S19.2E-1-1072-8205 CANAL+ FAMILY[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Rahan/%Le_prisonnier/2010-03-28.16.48.29-0.rec/info[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C S19.2E-1-1074-8372[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Ma_sorcière_bien-aimée/Séparation_illégale/2008-07-01.11.08.50.99.rec/info.vdr[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-4-1025[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Ma_sorcière_bien-aimée/L_assistant/2008-06-13.11.08.50.99.rec/info.vdr[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-4-1025[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Ma_sorcière_bien-aimée/Jeunesse_éternelle/2008-06-17.11.08.50.99.rec/info.vdr[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-4-1025[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Ma_sorcière_bien-aimée/Albert_Kadabra/2008-06-26.11.08.50.99.rec/info.vdr[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-4-1025[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Ma_sorcière_bien-aimée/La_belle_voisine/2008-06-20.11.08.50.99.rec/info.vdr[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C S19.2E-1-1074-8372[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Ma_sorcière_bien-aimée/Une_histoire_de_politique/2008-07-03.11.08.50.99.rec/info.vdr[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-4-1025[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Ma_sorcière_bien-aimée/La_leçon_de_conduite/2008-06-23.11.08.50.99.rec/info.vdr[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-4-1025[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Ma_sorcière_bien-aimée/Georges_le_sorcier/2008-06-27.11.08.50.99.rec/info.vdr[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-4-1025[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Ma_sorcière_bien-aimée/Laquelle_est_laquelle/2008-06-19.11.08.50.99.rec/info.vdr[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: unexpected tag while reading EPG data: ﻿C T-8442-4-1025[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in line 1[0m
+mars 29 16:34:57 netop vdr[30143]: [1;31m[30144] ERROR: EPG data problem in file /mnt/sdd4/VDR_netop/Séries/Ma_sorcière_bien-aimée/Ling_ling/2008-06-16.11.08.50.99.rec/info.vdr[0m
+mars 29 16:34:57 netop vdr[30143]: [30144] video directory scanner thread ended (pid=30143, tid=30144)
+mars 29 16:35:06 netop vdr[30143]: [30143] starting plugin: skinflatplus
+mars 29 16:35:06 netop vdr[30143]: [1;31m[30143] skinflatplus: No TrueColor OSD found! Aborting![0m
+mars 29 16:35:06 netop vdr[30143]: [30143] stopping plugin: skinnopacity
+mars 29 16:35:06 netop vdr[30143]: [30143] stopping plugin: skinpearlhd
+mars 29 16:35:06 netop vdr[30143]: [30143] stopping plugin: skinenigmang
+mars 29 16:35:06 netop vdr[30143]: [30143] stopping plugin: epgsearch
+mars 29 16:35:06 netop vdr[30143]: [30156] EPGSearch: Leaving search timer thread
+mars 29 16:35:06 netop vdr[30143]: [30156] EPGSearch: searchtimer thread ended (pid=30143, tid=30156)
+mars 29 16:35:06 netop vdr[30143]: [30143] stopping plugin: femon
+mars 29 16:35:06 netop vdr[30143]: [30143] stopping plugin: vdrmanager
+mars 29 16:35:06 netop vdr[30143]: [30143] stopping plugin: svdrposd
+mars 29 16:35:06 netop vdr[30143]: [30143] stopping plugin: svdrpservice
+mars 29 16:35:06 netop vdr[30143]: [30143] stopping plugin: streamdev-client
+mars 29 16:35:06 netop vdr[30143]: [30143] stopping plugin: streamdev-server
+mars 29 16:35:06 netop vdr[30143]: [30154] streamdev server thread ended (pid=30143, tid=30154)
+mars 29 16:35:06 netop vdr[30143]: [30143] stopping plugin: pin
+mars 29 16:35:06 netop vdr[30143]: [30143] stopping plugin: xineliboutput
+mars 29 16:35:06 netop vdr[30143]: [30143] [xine..put] cXinelibDevice::StopDevice(): Stopping device ...
+mars 29 16:35:07 netop vdr[30143]: [30151] Remote decoder/display server (cXinelibServer) thread ended (pid=30143, tid=30151)
+mars 29 16:35:07 netop vdr[30143]: [30143] [xine..put] cXinelibOsdProvider: shutting down !
+mars 29 16:35:08 netop vdr[30143]: [30149] section handler thread ended (pid=30143, tid=30149)
+mars 29 16:35:08 netop vdr[30143]: [30148] tuner on frontend 1/0 thread ended (pid=30143, tid=30148)
+mars 29 16:35:08 netop vdr[30143]: [30143] [xine..put] cXinelibDevice::StopDevice(): Stopping device ...
+mars 29 16:35:08 netop vdr[30143]: [30143] deleting plugin: epgsync
+mars 29 16:35:08 netop vdr[30143]: [30143] deleting plugin: extrecmenu
+mars 29 16:35:08 netop vdr[30143]: [30143] deleting plugin: skinflatplus
+mars 29 16:35:08 netop vdr[30143]: [30143] deleting plugin: skinnopacity
+mars 29 16:35:08 netop vdr[30143]: [30143] deleting plugin: skinpearlhd
+mars 29 16:35:08 netop vdr[30143]: [30143] deleting plugin: skinenigmang
+mars 29 16:35:08 netop vdr[30143]: [30143] deleting plugin: epgsearch
+mars 29 16:35:08 netop vdr[30143]: [30157] EPGSearch: Leaving conflict check thread
+mars 29 16:35:08 netop vdr[30143]: [30157] EPGSearch: conflictcheck thread ended (pid=30143, tid=30157)
+mars 29 16:35:08 netop vdr[30143]: [30143] deleting plugin: femon
+mars 29 16:35:08 netop vdr[30143]: [30143] deleting plugin: vdrmanager
+mars 29 16:35:08 netop vdr[30143]: [30143] deleting plugin: svdrposd
+mars 29 16:35:08 netop vdr[30143]: [30143] deleting plugin: svdrpservice
+mars 29 16:35:08 netop vdr[30143]: [30143] deleting plugin: streamdev-client
+mars 29 16:35:08 netop vdr[30143]: [30143] deleting plugin: streamdev-server
+mars 29 16:35:08 netop vdr[30143]: [30143] deleting plugin: pin
+mars 29 16:35:08 netop vdr[30143]: [30143] deleting plugin: xineliboutput
+mars 29 16:35:08 netop vdr[30143]: [30143] exiting, exit code 2
+mars 29 16:35:37 netop sudo[30199]: [1;39mhenri : TTY=pts/6 ; PWD=/home/henri/Sources/Video/VDR/vdr-versions/vdr4arch/plugins/vdr-skinflatplus ; USER=root ; COMMAND=/usr/bin/journalctl --since 16:34[0m
+mars 29 16:35:37 netop sudo[30199]: pam_unix(sudo:session): session opened for user root by (uid=0)

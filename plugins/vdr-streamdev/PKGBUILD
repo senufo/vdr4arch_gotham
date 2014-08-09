@@ -1,0 +1,37 @@
+# Maintainer: Senufo
+# Contributor: Ole Ernst <olebowle[at]gmx[dot]com
+pkgname=vdr-streamdev
+pkgver=0.6.0_33_g8c5859e
+epoch=1
+_gitver=8c5859ed4adaf8a642d1ef4f6647f53f0879f560
+_vdrapi=2.0.0
+pkgrel=2
+pkgdesc="implementation of the VTP (Video Transfer Protocol)"
+url="http://projects.vdr-developer.org/projects/show/plg-streamdev"
+arch=('x86_64' 'i686')
+license=('GPL2')
+depends=('gcc-libs' "vdr-api=${_vdrapi}")
+makedepends=('git')
+_plugname=$(echo $pkgname | sed 's/vdr-//g')
+backup=('var/lib/vdr/plugins/streamdev-server/streamdevhosts.conf')
+install="${pkgname}.install"
+source=("git://projects.vdr-developer.org/vdr-plugin-streamdev.git")
+md5sums=('SKIP')
+
+pkgver() {
+  cd "${srcdir}/vdr-plugin-${_plugname}"
+  git describe --tags | sed 's/-/_/g;s/v//'
+}
+
+build() {
+  cd "${srcdir}/vdr-plugin-${_plugname}"
+  make
+}
+
+
+package() {
+  cd "${srcdir}/vdr-plugin-${_plugname}"
+  make DESTDIR="$pkgdir" install
+
+  install -Dm644 streamdev-server/streamdevhosts.conf "$pkgdir/var/lib/vdr/plugins/streamdev-server/streamdevhosts.conf"
+}

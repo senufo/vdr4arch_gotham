@@ -1,0 +1,41 @@
+# Maintainer: Senufo
+pkgname=epgd
+pkgver=0.1.14
+_gitver=713b7e57f42d87d77433ea53da8c8b5ea3f7b3d3
+pkgrel=1
+pkgdesc="Part of the double team epgd+epg2vdr to effectively retrieve, store and import epg data to vdr"
+url="http://projects.vdr-developer.org/projects/vdr-epg-daemon"
+arch=('x86_64' 'i686')
+license=('GPL2')
+depends=('curl' 'libxslt' 'libarchive' 'libmariadbclient')
+makedepends=('git')
+source=("git://projects.vdr-developer.org/vdr-epg-daemon.git#commit=$_gitver")
+backup=('etc/epgd/channelmap.conf'
+        'etc/epgd/epgd.conf')
+md5sums=('SKIP')
+
+pkgver() {
+  cd "${srcdir}/vdr-epg-daemon"
+  git tag -a 0.1.14 -m 'Added Tag' 713b7e57f42d87d77433ea53da8c8b5ea3f7b3d3 2> /dev/null
+  git describe --tags | sed 's/-/_/g;s/v//'
+}
+
+build() {
+  cd "${srcdir}/vdr-epg-daemon"
+  make PREFIX='/usr'
+}
+
+package() {
+  cd "${srcdir}/vdr-epg-daemon"
+  mkdir -p "$pkgdir/usr/bin"
+  make DESTDIR="${pkgdir}" \
+       PREFIX='/usr' \
+       install
+
+  #Workaround epglv Makefile bug
+  mkdir -p "$pkgdir/$(mysql_config --plugindir)"
+  mv "$pkgdir/mysqlepglv.so" "$pkgdir/$(mysql_config --plugindir)"
+
+  install -Dm644 "contrib/epgd.service" "$pkgdir/usr/lib/systemd/system/epgd.service"
+  rm "$pkgdir/usr/bin/epgd-tool"
+}

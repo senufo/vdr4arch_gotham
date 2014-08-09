@@ -1,0 +1,8 @@
+post_install() {
+  chown -R henri:users var/lib/vdr
+  rm -f /var/lib/vdr/themes/PearlHD\(native\)-default.theme
+}
+
+post_upgrade() {
+  post_install
+}

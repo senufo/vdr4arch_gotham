@@ -1,0 +1,105 @@
+# vdr-plugin recsearch
+# Copyright (C) 2014
+# This file is distributed under the same license as the vdr-plugin-recsearch pckage.
+# Senufo <senufo2@gmail.com>, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: vdr-recsearch 0.2.2\n"
+"Report-Msgid-Bugs-To: <see README>\n"
+"POT-Creation-Date: 2014-04-13 15:13+0200\n"
+"PO-Revision-Date: 2014-04-13 15:13+0200\n"
+"Last-Translator: Senufo>\n"
+"Language-Team: French\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iutf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "search your recordings"
+msgstr "Rechercher vos enregistrements"
+
+msgid "search recordings"
+msgstr "Chercher des enregistrements"
+
+msgid "select category"
+msgstr "Selectionner la catégorie"
+
+msgid "<no category>"
+msgstr "<pas de catégorie>"
+
+msgid "load search template"
+msgstr "Charger le modèle de recherche"
+
+msgid "search term"
+msgstr "Terme de la recherche"
+
+msgid "status"
+msgstr "état"
+
+msgid "younger than days"
+msgstr "moins de jour"
+
+msgid "whatever"
+msgstr "égal"
+
+msgid "hot key"
+msgstr "Touche de raccourci"
+
+msgid "no hot key"
+msgstr "Pas de touche de raccourci"
+
+msgid "category"
+msgstr "Catégorie"
+
+msgid "Button$Save"
+msgstr "Sauver"
+
+msgid "Button$Find"
+msgstr "Rechercher"
+
+msgid "Button$Delete"
+msgstr "Effacer"
+
+msgid "Button$Load"
+msgstr "Charger"
+
+msgid "Button$Select"
+msgstr "Selectionner"
+
+msgid "search template has been saved"
+msgstr "chercher un modèle sauvé"
+
+msgid "enter something I can search for"
+msgstr "entrer ce que vous voulez chercher"
+
+msgid "delete shown search template?"
+msgstr "effacer le modèle de recherche"
+
+msgid "search template was deleted from file"
+msgstr "le modèle de recherche a été supprimer à partir du fichier"
+
+msgid "you have to save a search template first"
+msgstr "vous devez sauver le modèle de recherche d'abord"
+
+msgid "all"
+msgstr "tout"
+
+msgid "only new"
+msgstr "Seulement les nouveaux"
+
+msgid "only edited"
+msgstr "seulement les édités"
+
+msgid "invalid"
+msgstr "invalide"
+
+#. TRANSLATORS: note the leading comma and the %d for the number of days
+#, c-format
+msgid ", younger than %d days"
+msgstr ", plus récent que %d jour(s)"
+
+#. TRANSLATORS: note the leading comma and the %d for the number of the hot key
+#, c-format
+msgid ", hot key %d"
+msgstr ", touche de reaccourci %d"

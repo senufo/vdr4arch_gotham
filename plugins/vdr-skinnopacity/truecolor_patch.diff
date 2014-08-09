@@ -1,0 +1,11 @@
+--- skinnopacity.c.orig	2014-03-16 16:13:40.367016968 +0100
++++ skinnopacity.c	2014-03-16 16:12:40.699914281 +0100
+@@ -98,7 +98,7 @@
+ bool cPluginNopacity::Start(void) {
+     if (!cOsdProvider::SupportsTrueColor()) {
+         esyslog("nopacity: No TrueColor OSD found! Aborting!");
+-        return false;
++        //return false; to remove test truecolor OSD
+     } else
+         dsyslog("nopacity: TrueColor OSD found");
+     

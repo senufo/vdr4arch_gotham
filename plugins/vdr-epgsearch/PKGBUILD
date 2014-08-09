@@ -1,0 +1,44 @@
+# Maintainer: Christopher Reimer <vdr4arch[at]creimer[dot]net>
+pkgname=vdr-epgsearch
+pkgver=1.0.1_git
+_vdrapi=2.0.0
+epoch=1
+pkgrel=9
+pkgdesc="Searchtimer and replacement of the VDR program menu"
+url="http://winni.vdr-developer.org/epgsearch"
+arch=('x86_64' 'i686')
+license=('GPL2')
+depends=('pcre' "vdr-api=${_vdrapi}")
+optdepends=('msmtp: To send notification mails (Simpler replacement for sendmail)'
+            'ssmtp: To send notification mails (Another simpler replacement for sendmail)')
+install="$pkgname.install"
+_plugname=$(echo $pkgname | sed 's/vdr-//g')
+source=("git://projects.vdr-developer.org/vdr-plugin-epgsearch.git")
+backup=('var/lib/vdr/plugins/epgsearch/epgsearchcats.conf-epgdata'
+        'var/lib/vdr/plugins/epgsearch/epgsearchcats.conf-tvm2vdr-hoerzu'
+        'var/lib/vdr/plugins/epgsearch/epgsearchcats.conf-tvm2vdr-tvmovie'
+        'var/lib/vdr/plugins/epgsearch/epgsearchconflmail.templ'
+        'var/lib/vdr/plugins/epgsearch/epgsearchmenu.conf'
+        'var/lib/vdr/plugins/epgsearch/epgsearchupdmail-html.templ'
+        'var/lib/vdr/plugins/epgsearch/epgsearchupdmail.templ')
+options=('!emptydirs')
+md5sums=('SKIP')
+
+prepare() {
+  sed -i 's/^Menu/# Menu/g' "${srcdir}/vdr-plugin-epgsearch"/conf/epgsearchmenu.conf
+  sed -i 's/#USE_PINPLUGIN = 1/USE_PINPLUGIN = 1/g' "${srcdir}/vdr-plugin-epgsearch"/Makefile
+  sed -i 's/AUTOCONFIG=1/AUTOCONFIG=0/' "${srcdir}/vdr-plugin-epgsearch"/Makefile
+  sed -i 's/#REGEXLIB = pcre/REGEXLIB = pcre/' "${srcdir}/vdr-plugin-epgsearch"/Makefile
+
+}
+
+build() {
+  cd "${srcdir}/vdr-plugin-epgsearch"
+  make
+}
+
+
+package() {
+  cd "${srcdir}/vdr-plugin-epgsearch"
+  make DESTDIR="$pkgdir" install
+}

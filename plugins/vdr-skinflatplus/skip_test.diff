@@ -1,0 +1,19 @@
+--- skin-flatplus/skinflatplus.c.orig	2014-03-28 16:30:40.938950271 +0100
++++ skin-flatplus/skinflatplus.c	2014-03-29 13:58:52.239648718 +0100
+@@ -82,11 +82,11 @@
+ }
+ 
+ bool cPluginFlat::Start(void) {
+-    if (!cOsdProvider::SupportsTrueColor()) {
+-        esyslog("skinflatplus: No TrueColor OSD found! Aborting!");
+-        return false;
+-    } else
+-        dsyslog("skinflatplus: TrueColor OSD found");
++    //if (!cOsdProvider::SupportsTrueColor()) {
++    //    dsyslog("skinflatplus: No TrueColor OSD found!i : Skip TEST");
++    //    //return false;
++    //} else
++    //    dsyslog("skinflatplus: TrueColor OSD found");
+     
+     imgCache.Create();
+     imgCache.PreLoadImage();

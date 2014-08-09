@@ -1,0 +1,39 @@
+# Maintainer: Christopher Reimer <vdr4arch[at]creimer[dot]net>
+pkgname=vdr-xineliboutput
+pkgver=1.1.0.23.g23f9a0d
+_gitver=23f9a0d9ae9069d15c97bc1ea56be304a4d5f366
+_vdrapi=2.0.0
+pkgrel=3
+pkgdesc="X11 and Linux framebuffer front-end for VDR"
+url="http://www.sourceforge.net/projects/xineliboutput"
+arch=('x86_64' 'i686')
+license=('GPL2')
+depends=('dbus-glib' 'libextractor' "vdr-api=${_vdrapi}" 'xine-lib')
+optdepends=('nvidia: Required for VDPAU decoding'
+            'xorg-server: Required for software decoding')
+makedepends=('git')
+_plugname=$(echo $pkgname | sed 's/vdr-//g')
+source=("git://projects.vdr-developer.org/$_plugname.git#commit=$_gitver"
+	'fr_FR.po'
+	'truecolor.diff')
+md5sums=('SKIP' 'SKIP' 'SKIP')
+
+pkgver() {
+  cd "${srcdir}/${_plugname}"
+  git describe --tags | sed "s/$_plugname.//g;s/_/./g;s/-/./g"
+}
+
+build() {
+  cp "fr_FR.po" "${srcdir}/${_plugname}/po/"
+  cd "${srcdir}/${_plugname}"
+  patch -p0 -i "$srcdir/truecolor.diff"
+  make
+}
+
+package() {
+  cd "${srcdir}/${_plugname}"
+  echo "=> ${srcdir}/${_plugname}"
+  echo "==> DESTDIR=$pkgdir"
+  mkdir -p "$pkgdir/usr/lib/vdr/plugins"
+  make DESTDIR="$pkgdir" install
+}

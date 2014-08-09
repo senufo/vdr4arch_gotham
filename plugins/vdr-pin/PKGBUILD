@@ -1,0 +1,40 @@
+# Maintainer: Senufo
+pkgname=vdr-pin
+pkgver=0.1.14_g53afeeb
+epoch=2
+_gitver=53afeeb974fab96f2801ef65edcea607f23c925e
+_vdrapi=2.0.0
+pkgrel=4
+pkgdesc="provides additional functions to VDR's recordings menu"
+url="http://projects.vdr-developer.org/projects/show/plg-pin"
+arch=('x86_64' 'i686')
+license=('GPL2')
+depends=('gcc-libs' "vdr-api=${_vdrapi}")
+makedepends=('git')
+_plugname=$(echo $pkgname | sed 's/vdr-//g')
+source=("git://projects.vdr-developer.org/vdr-plugin-pin.git#commit=$_gitver"
+	"corr_fr_translation.diff")
+md5sums=('SKIP'
+	 'SKIP')
+
+pkgver() {
+  cd "${srcdir}/vdr-plugin-${_plugname}"
+  git describe --tags | sed 's/-/_/g;s/v//'
+}
+
+prepare() {
+  cd "${srcdir}/vdr-plugin-${_plugname}"
+  sed -i 's/*.c)/*.c *.h)/' "${srcdir}/vdr-plugin-${_plugname}"/Makefile
+  patch -p2 -i "$srcdir/corr_fr_translation.diff"
+}
+
+build() {
+  cd "${srcdir}/vdr-plugin-${_plugname}"
+  make
+}
+package() {
+  cd "${srcdir}/vdr-plugin-${_plugname}"
+
+  mkdir -p "$pkgdir/usr/lib/vdr/plugins"
+  make DESTDIR="$pkgdir" install
+}

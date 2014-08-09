@@ -1,0 +1,33 @@
+post_install() {
+  #Add vdr user
+  groupadd -g 666 vdr 2> /dev/null
+  useradd -m -g vdr -u 666 -G audio,lp,optical,storage,video,power,uucp vdr 2> /dev/null
+
+  #Create cachedir
+  mkdir -p var/cache/vdr
+  chown -R henri:users var/cache/vdr
+
+  #Create shutdown-hooks dir
+  mkdir -p usr/share/vdr/shutdown-hooks
+
+  #Create videodir
+  mkdir -p srv/vdr/video
+  chown -R henri:users srv/vdr
+
+  post_upgrade
+}
+
+post_upgrade() {
+  chown -R henri:users var/lib/vdr
+
+  mkdir -p usr/share/vdr/shutdown-hooks
+
+  chgrp vdr usr/lib/vdr/bin/shutdown-wrapper
+  chmod u+s usr/lib/vdr/bin/shutdown-wrapper
+}
+
+post_remove() {
+  rmdir var/cache/vdr 2> /dev/null
+  rmdir srv/vdr/video 2> /dev/null
+  rmdir srv/vdr 2> /dev/null
+}

@@ -1,0 +1,78 @@
+diff -urN vdr-2.0.1/config.c vdr-2.0.1----jump/config.c
+--- vdr-2.0.1/config.c   2013-03-18 09:57:50.000000000 +0100
++++ vdr-2.0.1----jump/config.c   2013-04-23 16:59:15.981462870 +0200
+@@ -474,6 +474,9 @@
+   ChannelsWrap = 0;
+   ShowChannelNamesWithSource = 0;
+   EmergencyExit = 1;
++  JumpSeconds = 60;
++  JumpSecondsSlow = 10;
++  JumpSecondsRepeat = 300;
+ }
+ 
+ cSetup& cSetup::operator= (const cSetup &s)
+@@ -680,6 +683,9 @@
+   else if (!strcasecmp(Name, "ShowChannelNamesWithSource")) ShowChannelNamesWithSource = atoi(Value);
+   else if (!strcasecmp(Name, "EmergencyExit"))       EmergencyExit      = atoi(Value);
+   else if (!strcasecmp(Name, "LastReplayed"))        cReplayControl::SetRecording(Value);
++  else if (!strcasecmp(Name, "JumpSeconds"))         JumpSeconds        = atoi(Value);
++  else if (!strcasecmp(Name, "JumpSecondsSlow"))     JumpSecondsSlow    = atoi(Value);
++  else if (!strcasecmp(Name, "JumpSecondsRepeat"))   JumpSecondsRepeat  = atoi(Value);
+   else
+      return false;
+   return true;
+@@ -789,6 +795,9 @@
+   Store("ShowChannelNamesWithSource", ShowChannelNamesWithSource);
+   Store("EmergencyExit",      EmergencyExit);
+   Store("LastReplayed",       cReplayControl::LastReplayed());
++  Store("JumpSeconds",        JumpSeconds);
++  Store("JumpSecondsSlow",    JumpSecondsSlow);
++  Store("JumpSecondsRepeat",  JumpSecondsRepeat);
+ 
+   Sort();
+ 
+diff -urN vdr-2.0.1/config.h vdr-2.0.1----jump/config.h
+--- vdr-2.0.1/config.h   2013-04-05 12:41:32.000000000 +0200
++++ vdr-2.0.1----jump/config.h   2013-04-23 17:00:06.287464255 +0200
+@@ -335,6 +335,9 @@
+   int ChannelsWrap;
+   int ShowChannelNamesWithSource;
+   int EmergencyExit;
++  int JumpSeconds;
++  int JumpSecondsSlow;
++  int JumpSecondsRepeat;
+   int __EndData__;
+   cString InitialChannel;
+   cString DeviceBondings;
+diff -urN vdr-2.0.1/menu.c vdr-2.0.1----jump/menu.c
+--- vdr-2.0.1/menu.c   2013-03-18 10:11:48.000000000 +0100
++++ vdr-2.0.1----jump/menu.c   2013-04-23 17:11:24.513482932 +0200
+@@ -3168,6 +3168,9 @@
+   Add(new cMenuEditIntItem( tr("Setup.Replay$Progress display time (s)"), &data.ProgressDisplayTime, 0, 60));
+   Add(new cMenuEditBoolItem(tr("Setup.Replay$Pause replay when setting mark"), &data.PauseOnMarkSet));
+   Add(new cMenuEditIntItem(tr("Setup.Replay$Resume ID"), &data.ResumeID, 0, 99));
++  Add(new cMenuEditIntItem(tr("Setup.Replay$Jump Seconds"),             &data.JumpSeconds));
++  Add(new cMenuEditIntItem(tr("Setup.Replay$Jump Seconds Slow"),        &data.JumpSecondsSlow));
++  Add(new cMenuEditIntItem(tr("Setup.Recording$Jump Seconds (Repeat)"), &data.JumpSecondsRepeat));
+ }
+ 
+ void cMenuSetupReplay::Store(void)
+@@ -4931,9 +4934,15 @@
+     case kRight:   Forward(); break;
+     case kRed:     TimeSearch(); break;
+     case kGreen|k_Repeat:
+-    case kGreen:   SkipSeconds(-60); break;
++                   SkipSeconds(-(Setup.JumpSecondsRepeat)); break;
++    case kGreen:   SkipSeconds(-(Setup.JumpSeconds)); break;
++    case k1|k_Repeat:
++    case k1:       SkipSeconds(-Setup.JumpSecondsSlow); break;
++    case k3|k_Repeat:
++    case k3:       SkipSeconds( Setup.JumpSecondsSlow); break;
+     case kYellow|k_Repeat:
+-    case kYellow:  SkipSeconds( 60); break;
++                   SkipSeconds(Setup.JumpSecondsRepeat); break;
++    case kYellow:  SkipSeconds(Setup.JumpSeconds); break;
+     case kStop:
+     case kBlue:    Hide();
+                    Stop();
+

@@ -1,0 +1,69 @@
+diff -Naur skinnopacity-0.0.3_orig/displaymenuview.c skinnopacity-0.0.3/displaymenuview.c
+--- skinnopacity-0.0.3_orig/displaymenuview.c	2012-11-24 12:38:50.000000000 +0100
++++ skinnopacity-0.0.3/displaymenuview.c	2012-11-24 17:04:29.809641271 +0100
+@@ -41,11 +41,11 @@
+ #ifdef USE_YAEPG
+ 	if (config.scalePicture) {
+ 		tArea availableArea;
+-		availableArea.x1 = 0;
+-		availableArea.y1 = 0;
+-		availableArea.x2 = osdWidth;
+-		availableArea.y2 = osdHeight;
+-		ScalePreserveAspect(osd->vidWin, 4.0/3.0, availableArea);
++		availableArea.x1 = -osdLeft;
++		availableArea.y1 = -osdTop;
++		availableArea.x2 = osdWidth + osdLeft;
++		availableArea.y2 = osdHeight + osdTop;
++		ScalePreserveAspect(osd->vidWin, vidAspect, availableArea);
+ 		osd->vidWin.bpp = 12;
+ 	}
+ #endif
+@@ -57,7 +57,7 @@
+ 	osdWidth = cOsd::OsdWidth();
+ 	osdHeight = cOsd::OsdHeight();
+ 	osd = CreateOsd(osdLeft, osdTop, osdWidth, osdHeight);
+-    cDevice::PrimaryDevice()->GetVideoSize(screenWidth, screenHeight, aspect);
++	cDevice::PrimaryDevice()->GetVideoSize(vidWidth, vidHeight, vidAspect);
+ 	return osd;
+ }
+ 
+@@ -296,7 +296,7 @@
+ 			availableArea.y1 = osdTop + headerHeight;
+ 			availableArea.x2 = contentWidthFull;
+ 			availableArea.y2 = availableArea.y1 + contentHeight;
+-			ScalePreserveAspect(osd->vidWin, aspect, availableArea);
++			ScalePreserveAspect(osd->vidWin, vidAspect, availableArea);
+ 			osd->vidWin.bpp = 12;
+ 		}
+ #endif
+@@ -305,11 +305,11 @@
+ #ifdef USE_YAEPG
+ 		if (config.scalePicture) {
+ 			tArea availableArea;
+-			availableArea.x1 = 0;
+-			availableArea.y1 = 0;
+-			availableArea.x2 = osdWidth;
+-			availableArea.y2 = osdHeight;
+-			ScalePreserveAspect(osd->vidWin, aspect, availableArea);
++			availableArea.x1 = -osdLeft;
++			availableArea.y1 = -osdTop;
++			availableArea.x2 = osdWidth + osdLeft;
++			availableArea.y2 = osdHeight + osdTop;
++			ScalePreserveAspect(osd->vidWin, vidAspect, availableArea);
+ 			osd->vidWin.bpp = 12;
+ 		}
+ #endif
+diff -Naur skinnopacity-0.0.3_orig/displaymenuview.h skinnopacity-0.0.3/displaymenuview.h
+--- skinnopacity-0.0.3_orig/displaymenuview.h	2012-11-22 17:56:16.000000000 +0100
++++ skinnopacity-0.0.3/displaymenuview.h	2012-11-24 16:55:54.437360201 +0100
+@@ -43,8 +43,8 @@
+ 		cFont *fontMessage;
+ 		int osdWidth, osdHeight;
+ 		int osdLeft, osdTop;
+-		int screenWidth, screenHeight;
+-		double aspect;
++		int vidWidth, vidHeight;
++		double vidAspect;
+ 		int widthScrollbar;
+ 		int dateWidth;
+ 		int headerHeight, footerHeight, contentHeight;

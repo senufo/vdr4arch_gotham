@@ -1,0 +1,126 @@
+--- src/vdr-plugin-pin/po/fr_FR.po	2014-03-28 21:59:02.950100661 +0100
++++ fr_FR_correction.po	2014-03-28 22:03:59.245781071 +0100
+@@ -19,8 +19,11 @@
+ "Content-Type: text/plain; charset=ISO-8859-1\n"
+ "Content-Transfer-Encoding: 8bit\n"
+ 
++msgid "Childlock"
++msgstr "Contrôle Parental"
++
+ msgid "Setup"
+-msgstr ""
++msgstr "Configuration"
+ 
+ msgid "Add current channel to protection list"
+ msgstr "Ajouter la chaîne actuelle à la protection parentale"
+@@ -35,22 +38,22 @@
+ msgstr "Editer les émissions protégés"
+ 
+ msgid "Edit plugin locks"
+-msgstr "editer la protection de plugin"
++msgstr "Editer la protection de plugin"
+ 
+ msgid "Edit menu locks"
+-msgstr ""
++msgstr "Editer la protection des menus"
+ 
+ msgid "Unlock setup"
+-msgstr ""
++msgstr "Débloquer Paramètres"
+ 
+ msgid "Lock setup"
+-msgstr ""
++msgstr "Bloquer Paramètres"
+ 
+ msgid "Activate childlock"
+-msgstr "Protection parentales activée"
++msgstr "Activer la protection parentale"
+ 
+ msgid "Activated pin protection"
+-msgstr "Activé la protection parentale"
++msgstr "Activer la protection parentale"
+ 
+ msgid "Please setup a pin code first!"
+ msgstr "Entrer le code de protection d'abord!"
+@@ -65,7 +68,7 @@
+ msgstr "Plugin sous protection"
+ 
+ msgid "Menu protections"
+-msgstr "Protégier des menus"
++msgstr "Protéger des menus"
+ 
+ msgid "locked"
+ msgstr "protégé"
+@@ -95,7 +98,7 @@
+ msgstr "Enlever?"
+ 
+ msgid "Name"
+-msgstr ""
++msgstr "Nom"
+ 
+ msgid "Lock active"
+ msgstr "Protection active"
+@@ -104,13 +107,13 @@
+ msgstr "Expression de recherche"
+ 
+ msgid "Search mode"
+-msgstr ""
++msgstr "Mode de recherche"
+ 
+ msgid "Start"
+-msgstr ""
++msgstr "Démarrer"
+ 
+ msgid "Stop"
+-msgstr ""
++msgstr "Arrêter"
+ 
+ msgid "Setup your pin code: "
+ msgstr "Introduisez le code d'accès:"
+@@ -128,13 +131,13 @@
+ msgstr "Le code est faux!"
+ 
+ msgid "Please enter pin code first"
+-msgstr "Entré d'abord le code"
++msgstr "Entrez d'abord le code"
+ 
+ msgid "Recording protected, enter pin code first"
+-msgstr "Entrée le code de protection"
++msgstr "Entrez le code de protection"
+ 
+ msgid "channel is protected"
+-msgstr "Chaînes protégée"
++msgstr "Chaîne protégée"
+ 
+ msgid "broadcast is protected"
+ msgstr "Emission protégée"
+@@ -146,7 +149,7 @@
+ msgstr ""
+ 
+ msgid "Skip protected channel silent"
+-msgstr "Les chaînes protégés seront ignorées sans infos"
++msgstr "Les chaînes protégées seront ignorées sans infos"
+ 
+ msgid "Hide protected menus"
+ msgstr "Menu protégés sont invisibles"
+@@ -158,16 +161,16 @@
+ msgstr "Enregistrements protégés sont invisibles"
+ 
+ msgid "Open menu after pin request"
+-msgstr "Ouvrir le menu après la rentré de la cléed"
++msgstr "Ouvrir le menu après la rentrée de la clé"
+ 
+ msgid "Pin inactivity time [min]"
+-msgstr "Protection après une inactivitées de [min]"
++msgstr "Protection après une inactivitée de [min]"
+ 
+ msgid "Autoprotection of recordings"
+-msgstr "Protection automatique des enregistrement"
++msgstr "Protection automatique des enregistrements"
+ 
+ msgid "Log Level [0-5]"
+ msgstr ""
+ 
+ msgid "Ignoring invalid pin"
+-msgstr "Le code est fau"
++msgstr "Le code est faux"
