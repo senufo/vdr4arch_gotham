@@ -10,7 +10,7 @@ depends=('libjpeg-turbo' 'perl' 'ttf-font')
 optdepends=('lirc-utils: remote control support'
             'ncurses: skinncurses plugin'
             'runvdr-extreme: startscript for vdr')
-provides=("vdr-api=2.0.0")
+provides=("vdr-api=2.0.6")
 backup=('var/lib/vdr/channels.conf'
         'var/lib/vdr/diseqc.conf'
         'var/lib/vdr/keymacros.conf'
