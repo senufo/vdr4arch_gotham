@@ -2,8 +2,8 @@
 pkgname=vdr-xineliboutput
 pkgver=1.1.0.23.g23f9a0d
 _gitver=23f9a0d9ae9069d15c97bc1ea56be304a4d5f366
-_vdrapi=2.0.0
-pkgrel=3
+_vdrapi=2.0.6
+pkgrel=4
 pkgdesc="X11 and Linux framebuffer front-end for VDR"
 url="http://www.sourceforge.net/projects/xineliboutput"
 arch=('x86_64' 'i686')
