@@ -29,7 +29,7 @@ prepare() {
   cd "${srcdir}/skin-flatplus"
   #patch -p0 -i "$srcdir/truecolor.diff"
   #patch -p0 -i "$srcdir/error_osd.diff"
-  patch -p1 -i "$srcdir/skip_test.diff"
+  #patch -p1 -i "$srcdir/skip_test.diff"
   patch -p2 -i "$srcdir/first_display_false.diff"
 }
 package() {
